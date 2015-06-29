@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'checkstyle'
 
 dependencies {
   compile 'com.android.support:appcompat-v7:22.2.0'
