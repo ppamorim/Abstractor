@@ -4,7 +4,7 @@
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Cult-blue.svg?style=flat)](https://android-arsenal.com/details/1/1913)
 [![JitPack](https://img.shields.io/github/release/ppamorim/Cult.svg?label=JitPack%20Maven)](https://jitpack.io/#ppamorim/Cult)
 
-Abstractor is a tiny library that will help you to develop a application, this have a collection of abstract and helper classes to reduce the boilerplate code.
+Abstractor is a tiny library that will help you to develop an Android application, this have a collection of abstract and helper classes to reduce the boilerplate code.
 
 This library should work on API 10.
 
