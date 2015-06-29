@@ -53,9 +53,9 @@ This library uses ButterKnife to instantiate the views, you can this amazing lib
 
 You can extends your class with:
 
-An clear Activity: `AbstractActivity`.
-Activity with Toolbar: `AbstractToolbarActivity`.
-Activity with DrawerLayout: `AbstractDrawerActivity`.
+ An clear Activity: `AbstractActivity`.
+ Activity with Toolbar: `AbstractToolbarActivity`.
+ Activity with DrawerLayout: `AbstractDrawerActivity`.
 
 Import dependency
 --------------------------------
