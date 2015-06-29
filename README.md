@@ -4,7 +4,8 @@
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-Cult-blue.svg?style=flat)](https://android-arsenal.com/details/1/1913)
 [![JitPack](https://img.shields.io/github/release/ppamorim/Cult.svg?label=JitPack%20Maven)](https://jitpack.io/#ppamorim/Cult)
 
-Abstractor will help you to develop a application, this have a collection of abstract and helper classes to reduce the boilerplate code.
+Abstractor is a tiny library that will help you to develop a application, this have a collection of abstract and helper classes to reduce the boilerplate code.
+
 This library should work on API 10.
 
 ![Demo 1][11]
@@ -15,7 +16,7 @@ Usage
 * 1. You can extends your activity like:
 
 ```java
-  public class BaseActivity extends AbstractToolbarActivity {
+  public class BaseActivity extends AbstractActivity {
     @Override protected int getLayoutId() {
       return R.layout.activity_base;
     }
@@ -23,6 +24,15 @@ Usage
 ```
 
 That's all.
+This library uses ButterKnife to instantiate the views, you can this amazing library at your project too.
+
+You can extends your class with:
+
+An clear Activity: `AbstractActivity`
+
+Activity with Toolbar: `AbstractToolbarActivity`
+
+Activity with DrawerLayout: `AbstractDrawerActivity`
 
 Import dependency
 --------------------------------
