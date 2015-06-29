@@ -8,22 +8,47 @@ Abstractor is a tiny library that will help you to develop a application, this h
 
 This library should work on API 10.
 
-![Demo 1][11]
-
 Usage
 -----
 
-* 1. You can extends your activity like:
+* You can replace this:
+
+```java
+  public class BoringActivity extends AppCompatActivity {
+
+    private View boringView;
+
+    @Override public void onCreate(Bundle savedInstanceState) {
+      super.onCreate(savedInstanceState);
+      setContentView(R.layout.activity_boring);
+      boringView = findViewById(R.id.view_boring);
+      boringView.setOnClickListener(onClickListener);
+    }
+
+    private View.OnClickListener onClickListener = new View.OnClickListener() {
+      @Override public void onClick(View v) {
+        //doSomething
+      }
+    };
+
+  }
+```
+
+* With this:
 
 ```java
   public class BaseActivity extends AbstractActivity {
     @Override protected int getLayoutId() {
       return R.layout.activity_base;
     }
+    @OnClick(R.id.view_happy) void onViewClick() {
+      //doSomething
+    }
   }
 ```
 
-That's all.
+That's all. Your activity is ready!
+
 This library uses ButterKnife to instantiate the views, you can this amazing library at your project too.
 
 You can extends your class with:
@@ -37,7 +62,7 @@ Activity with DrawerLayout: `AbstractDrawerActivity`
 Import dependency
 --------------------------------
 
-* This library is under development yet, use at your own risk.
+* This library is under development yet.
 
 This library use `appcompat-v7:22.1.1` and `butterKnife:7.0.0`.
 
