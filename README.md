@@ -49,7 +49,7 @@ Usage
 
 That's all. Your activity is ready!
 
-This library uses ButterKnife to instantiate the views, you can this amazing library at your project too.
+This library uses ButterKnife to instantiate the views, you can use this amazing library at your project too.
 
 Classes
 -------
